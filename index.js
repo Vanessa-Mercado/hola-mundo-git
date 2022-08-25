@@ -1,11 +1,14 @@
 let nombre = "Juan Perez";
-let edad = calcularEdad(2002)
+let edad = calcularEdad(2002);
 console.log("Hola " + nombre);
 console.log(nombre + " tiene "+ edad + " años");
 
+console.log("se le pagara: "+calcularSalario(8, 30000));
+
 function calcularEdad(anioNacimiento){
-    const fechaActual = new Date();
-    const anioActual = fechaActual.getFullYear();
-    const edad = anioActual - anioNacimiento;
-    return edad;
+    return new Date().getFullYear() - anioNacimiento;
+}
+
+function calcularSalario(horasTrabajadas, montoPorHora){
+    return horasTrabajadas * montoPorHora;
 }
