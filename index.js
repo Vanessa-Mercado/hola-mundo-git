@@ -1,7 +1,8 @@
 let nombre = "Juan Perez";
-let edad = 25;
+let edad = calcularEdad(2002);
 console.log("Hola " + nombre);
 console.log(nombre + " tiene "+ edad + " años");
+
 console.log("se le pagara: "+calcularSalario(8, 30000));
 
 function calcularEdad(anioNacimiento){
